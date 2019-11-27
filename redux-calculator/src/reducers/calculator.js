@@ -25,4 +25,5 @@ const calculator = (state = initialAppState, action) => {
   }
 };
 
+
 export default calculator;

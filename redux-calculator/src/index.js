@@ -1,3 +1,4 @@
+
 import './index.css';
 import React from 'react';
 import {render} from 'react-dom';
@@ -8,7 +9,9 @@ import reducer from './reducers';
 
 const store = createStore(reducer);
 
+
 render(<Provider store={store}>
     <CalculatorContainer/>
   </Provider>,
   document.getElementById('root'));
+
