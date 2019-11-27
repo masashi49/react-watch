@@ -1,4 +1,3 @@
-import * as serviceWorker from './serviceWorker';
 
 import './index.css';
 import React from 'react';
@@ -10,10 +9,9 @@ import reducer from './reducers';
 
 const store = createStore(reducer);
 
-render(
-    <Provider store={store}>
-        <CalculatorContainer/>
-    </Provider>,
-    document.getElementById('root')
-);
-serviceWorker.unregister();
+
+render(<Provider store={store}>
+    <CalculatorContainer/>
+  </Provider>,
+  document.getElementById('root'));
+

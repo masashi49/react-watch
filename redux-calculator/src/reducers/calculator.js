@@ -1,4 +1,4 @@
-import * as actionTypes from '../utils/actionTypes';
+import * as actionTypes from '../utils/actiontypes';
 
 const initialAppState = {
   inputValue: 0,
@@ -24,5 +24,6 @@ const calculator = (state = initialAppState, action) => {
     return state;
   }
 };
+
 
 export default calculator;
